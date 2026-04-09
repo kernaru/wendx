@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Свадебное приглашение</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app">
+    <div class="hero-bg"></div>
+
+    <div class="screens">
+      <section class="screen hero-screen active" aria-label="Титульный экран свадебного приглашения">
+        <div class="hero">
+          <div class="spacer-top" aria-hidden="true"></div>
+
+          <div class="center-group">
+            <div class="name first">Дмитрий</div>
+            <div class="amp">&amp;</div>
+            <div class="name last">Валерия</div>
+          </div>
+
+          <div class="meta-group">
+            <p class="date">27 июня 2026</p>
+            <p class="subtitle">
+              Мы с радостью приглашаем вас<br>
+              разделить с нами этот особенный момент
+            </p>
+          </div>
+
+          <div class="bottom-group">
+            <div class="cta">Проведи этот день вместе с нами</div>
+
+            <button class="arrow-button heart-button" id="nextButton" type="button" aria-label="Перейти дальше">
+              <svg class="heart-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M12 20.2s-6.7-4.35-9.18-8.18C1.1 9.33 2.1 5.9 5.44 4.84c2.02-.64 3.97.12 5.05 1.77 1.08-1.65 3.03-2.41 5.05-1.77 3.34 1.06 4.34 4.49 2.62 7.18C18.7 15.85 12 20.2 12 20.2Z" />
+              </svg>
+            </button>
+
+            <div class="hint">проведи вверх</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen invite-screen" aria-label="Приглашение">
+        <div class="invite-decor" aria-hidden="true">
+          <div class="decor decor-1"></div>
+          <div class="decor decor-2"></div>
+          <div class="decor decor-3"></div>
+          <div class="decor decor-4"></div>
+
+          <div class="corner corner-top-left"></div>
+          <div class="corner corner-top-right"></div>
+          <div class="corner corner-bottom-left"></div>
+          <div class="corner corner-bottom-right"></div>
+
+          <div class="emoji emoji-1">❤️</div>
+          <div class="emoji emoji-2">💍</div>
+          <div class="emoji emoji-3">🌸</div>
+          <div class="emoji emoji-4">🤍</div>
+          <div class="emoji emoji-5">🕊️</div>
+          <div class="emoji emoji-6">✨</div>
+          <div class="emoji emoji-7">🌿</div>
+          <div class="emoji emoji-9">💕</div>
+          <div class="emoji emoji-10">💐</div>
+          <div class="emoji emoji-11">🫶</div>
+          <div class="emoji emoji-12">🌷</div>
+        </div>
+
+        <div class="invite-shell">
+          <div class="invite-card">
+            <p class="invite-line line-1">В нашей жизни начинается новая глава,</p>
+            <p class="invite-line line-2">важная и по-настоящему особенная.</p>
+            <p class="invite-line line-3">Нам очень хочется разделить этот момент</p>
+            <p class="invite-line line-4">с самыми близкими людьми — с вами.</p>
+          </div>
+          <div class="calendar-badge">
+            <div class="calendar-top">
+              <span class="month">Июнь</span>
+              <span class="year">2026</span>
+            </div>
+
+            <div class="calendar-grid calendar-weekdays">
+              <span>пн</span>
+              <span>вт</span>
+              <span>ср</span>
+              <span>чт</span>
+              <span>пт</span>
+              <span>сб</span>
+              <span>вс</span>
+            </div>
+
+            <div class="calendar-grid calendar-days">
+              <span class="muted">1</span>
+              <span class="muted">2</span>
+              <span class="muted">3</span>
+              <span class="muted">4</span>
+              <span class="muted">5</span>
+              <span class="muted">6</span>
+              <span class="muted">7</span>
+
+              <span class="muted">8</span>
+              <span class="muted">9</span>
+              <span class="muted">10</span>
+              <span class="muted">11</span>
+              <span class="muted">12</span>
+              <span class="muted">13</span>
+              <span class="muted">14</span>
+
+              <span class="muted">15</span>
+              <span class="muted">16</span>
+              <span class="muted">17</span>
+              <span class="muted">18</span>
+              <span class="muted">19</span>
+              <span class="muted">20</span>
+              <span class="muted">21</span>
+
+              <span class="muted">22</span>
+              <span class="muted">23</span>
+              <span class="muted">24</span>
+              <span class="muted">25</span>
+              <span class="muted">26</span>
+              <span class="active-day">27</span>
+              <span class="muted">28</span>
+
+              <span class="muted">29</span>
+              <span class="muted">30</span>
+            </div>
+          </div>
+
+          <button class="calendar-button" id="calendarButton" type="button">
+            Добавить в календарь
+          </button>
+        </div>
+      </section>
+
+      <section class="screen details-screen" aria-label="Детали мероприятия">
+        <div class="details-decor" aria-hidden="true">
+          <div class="details-glow details-glow-1"></div>
+          <div class="details-glow details-glow-2"></div>
+          <div class="details-glow details-glow-3"></div>
+
+          <div class="details-corner details-corner-top-left"></div>
+          <div class="details-corner details-corner-top-right"></div>
+          <div class="details-corner details-corner-bottom-left"></div>
+          <div class="details-corner details-corner-bottom-right"></div>
+
+          <div class="details-emoji details-emoji-1">🕯️</div>
+          <div class="details-emoji details-emoji-2">🍽️</div>
+          <div class="details-emoji details-emoji-3">🥂</div>
+          <div class="details-emoji details-emoji-4">✨</div>
+          <div class="details-emoji details-emoji-5">🤍</div>
+          <div class="details-emoji details-emoji-6">🫒</div>
+          <div class="details-emoji details-emoji-7">🌿</div>
+          <div class="details-emoji details-emoji-9">🕊️</div>
+          <div class="details-emoji details-emoji-10">🍷</div>
+          <div class="details-emoji details-emoji-11">💫</div>
+          <div class="details-emoji details-emoji-12">🌙</div>
+        </div>
+
+        <div class="details-shell">
+          <div class="details-card time-card">
+            <div class="details-label-row">
+              <svg class="details-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="8"></circle>
+                <path d="M12 8v4l2.5 2.5"></path>
+              </svg>
+              <span>Начало</span>
+            </div>
+
+            <div class="details-time">17:00</div>
+          </div>
+
+          <div class="details-card place-card">
+            <div class="details-label-row">
+              <svg class="details-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 21s-5.5-5.2-5.5-10A5.5 5.5 0 1 1 17.5 11c0 4.8-5.5 10-5.5 10Z"></path>
+                <circle cx="12" cy="11" r="2.2"></circle>
+              </svg>
+              <span>Место проведения</span>
+            </div>
+
+            <div class="details-place">Ресторан "КАРС"</div>
+            <div class="details-address">г. Козельск, ул. Колхозная, 19А</div>
+          </div>
+
+          <div class="details-map-card">
+            <img
+              class="details-map-image"
+              src="images/map-placeholder.png"
+              alt="Карта места проведения"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+
+          <a
+            class="details-route-button"
+            href="https://yandex.com/maps/-/CPbXR-5d"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Построить маршрут
+          </a>
+
+          <div class="details-card timer-card">
+            <div class="details-label-row">
+              <span>До события осталось</span>
+            </div>
+
+            <div class="timer">
+              <div class="timer-item">
+                <span class="timer-value" id="days">00</span>
+                <span class="timer-label">дней</span>
+              </div>
+
+              <div class="timer-item">
+                <span class="timer-value" id="hours">00</span>
+                <span class="timer-label">часов</span>
+              </div>
+
+              <div class="timer-item">
+                <span class="timer-value" id="minutes">00</span>
+                <span class="timer-label">минут</span>
+              </div>
+
+              <div class="timer-item">
+                <span class="timer-value" id="seconds">00</span>
+                <span class="timer-label">секунд</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen dresscode-screen" aria-label="Дресс-код">
+        <div class="dresscode-bg-base dresscode-bg-layer is-active" id="dressBgBase" aria-hidden="true"></div>
+        <div class="dresscode-bg-overlay dresscode-bg-layer" id="dressBgOverlay" aria-hidden="true"></div>
+        <div class="dresscode-noise" aria-hidden="true"></div>
+        <div class="dresscode-corner dresscode-corner-top-left" aria-hidden="true"></div>
+        <div class="dresscode-corner dresscode-corner-top-right" aria-hidden="true"></div>
+        <div class="dresscode-corner dresscode-corner-bottom-left" aria-hidden="true"></div>
+        <div class="dresscode-corner dresscode-corner-bottom-right" aria-hidden="true"></div>
+
+        <div class="dresscode-header">Dress Code</div>
+
+        <div class="dresscode-shell">
+          <div class="dresscode-stage" id="dresscodeStage">
+            <div class="dresscode-card">
+              <div class="dresscode-card-glow" aria-hidden="true"></div>
+
+              <div class="dresscode-image-frame">
+                <img
+                  id="dressImage"
+                  class="dresscode-image"
+                  src="images/dresscode/female-rose.jpg"
+                  alt="Образ для дресс-кода"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
+
+            <div class="dresscode-toggle" aria-label="Выбор пола образа">
+              <div
+                class="dresscode-toggle-track is-female"
+                id="genderTrack"
+                tabindex="0"
+                role="group"
+                aria-label="Мужской или женский образ"
+              >
+                <div class="dresscode-toggle-thumb" id="genderThumb"></div>
+
+                <button
+                  class="dresscode-toggle-segment"
+                  id="genderMaleButton"
+                  type="button"
+                  data-gender="male"
+                  aria-label="Мужской образ"
+                >
+                  Мужской
+                </button>
+
+                <button
+                  class="dresscode-toggle-segment is-active"
+                  id="genderFemaleButton"
+                  type="button"
+                  data-gender="female"
+                  aria-label="Женский образ"
+                >
+                  Женский
+                </button>
+              </div>
+            </div>
+
+            <div class="dresscode-palette-wrap" aria-label="Выбор цвета">
+              <div class="dresscode-palette-track" id="paletteTrack">
+                <div class="dresscode-palette-thumb" id="paletteThumb" aria-hidden="true"></div>
+
+                <button
+                  class="dresscode-palette-segment is-active"
+                  type="button"
+                  data-color="rose"
+                  aria-label="Нежно-розовый"
+                  title="Нежно-розовый"
+                >
+                  <span class="dresscode-palette-swatch" style="--swatch-color:#e3beb5;"></span>
+                </button>
+
+                <button
+                  class="dresscode-palette-segment"
+                  type="button"
+                  data-color="beige"
+                  aria-label="Светлый бежевый"
+                  title="Светлый бежевый"
+                >
+                  <span class="dresscode-palette-swatch" style="--swatch-color:#d6c0a8;"></span>
+                </button>
+
+                <button
+                  class="dresscode-palette-segment"
+                  type="button"
+                  data-color="olive"
+                  aria-label="Оливково-зелёный"
+                  title="Оливково-зелёный"
+                >
+                  <span class="dresscode-palette-swatch" style="--swatch-color:#96a480;"></span>
+                </button>
+
+                <button
+                  class="dresscode-palette-segment"
+                  type="button"
+                  data-color="brown"
+                  aria-label="Тёплый коричневый"
+                  title="Тёплый коричневый"
+                >
+                  <span class="dresscode-palette-swatch" style="--swatch-color:#7a5946;"></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="dresscode-note-wrap">
+              <div class="dresscode-note">
+                Образ может быть любым — главное придерживаться выбранной цветовой гаммы
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen rsvp-screen" aria-label="RSVP">
+        <div class="rsvp-decor" aria-hidden="true">
+          <div class="rsvp-glow rsvp-glow-1"></div>
+          <div class="rsvp-glow rsvp-glow-2"></div>
+          <div class="rsvp-glow rsvp-glow-3"></div>
+          <div class="rsvp-corner rsvp-corner-top-left"></div>
+          <div class="rsvp-corner rsvp-corner-top-right"></div>
+          <div class="rsvp-corner rsvp-corner-bottom-left"></div>
+          <div class="rsvp-corner rsvp-corner-bottom-right"></div>
+        </div>
+
+        <div class="rsvp-scroll" id="rsvpScroll">
+          <div class="rsvp-shell">
+            <div class="rsvp-root" id="rsvpRoot"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
